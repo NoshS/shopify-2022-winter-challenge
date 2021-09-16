@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<h1>NASA Picture of the day</h1>
+
+  <p id ="title"></p>
+  <p id ="description"></p>
+  <p id ="date"></p>
+  <img id="image" src="" width = 400px height = 400px/>
+  <br/>
+  <p id="isLiked"></p>
+  <script type="text/javascript">
+  	 function Liked(){
+      document.querySelector("#isLiked").innerHTML="Image Liked";
+    }
+    function UnLiked(){
+      document.querySelector("#isLiked").innerHTML="Image UnLiked";
+    }
+  </script>
+
+  <button type="button" onclick="Liked()">Like</button>
+  <button type="button" onclick="UnLiked()">UnLike</button>
+</body>
+</html>
+
